@@ -3,56 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minimercado IGUACUANO</title>
-    <link rel="stylesheet" href="/sytles.css">
+    <title>Iguacus Market</title>
 </head>
 <body>
     <header>
-        <h1>Minimercado IGUACUANO</h1>
+        <h1>Iguacus Market</h1>
         <nav>
-            <a href="#categorias">Produtos</a>
+            <a href="#produtos">Produtos</a>
             <a href="#servicos">Serviços</a>
             <a href="#contato">Contato</a>
         </nav>
     </header>
 
     <div class="container">
-        <section id="categorias">
+        <section id="produtos">
             <h2>Categorias de Produtos</h2>
+    
+            <!-- Bebidas -->
             <div class="categoria">
                 <h3>Bebidas</h3>
-                <div class="produto">
-                    <img src="https://img.cdndsgni.com/preview/10000392.jpg" alt="Bebida 1" width="150">
-                    <p>Refrigerante - R$ 5,00</p>
-                </div>
-                <div class="produto">
-                    <img src="https://d8vlg9z1oftyc.cloudfront.net/axel/image/product/5b56c984629298b7253963cc8d4743f420231211153003/original/ambev-guaravita-24x290ml_4115.png" alt="Bebida 2" width="150">
-                    <p>Suco Natural - R$ 7,00</p>
-                </div>
+                <table>
+                    <tr>
+                        <td><img src="/images/refrigerante.png" alt="Refrigerante" width="150"><p>Refrigerante - R$ 5,00</p></td>
+                        <td><img src="images/suco_natural.png" alt="Suco Natural" width="150"><p>Suco Natural - R$ 7,00</p></td>
+                        <td><img src="/images/cerveja.png" alt="Cerveja" width="150"><p>Cerveja - R$ 4,00</p></td>
+                        <td><img src="/images/agua.png" alt="Água Mineral" width="80"><p>Água Mineral - R$ 2,00</p></td>
+                        <td><img src="/images/isotonico.png" alt="Isotônico" width="150"><p>Isotônico - R$ 6,50</p></td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/energetico.png" alt="Energético" width="150"><p>Energético - R$ 9,00</p></td>
+                        <td><img src="/images/cha_gelado.png" alt="Chá Gelado" width="150"><p>Chá Gelado - R$ 5,50</p></td>
+                        <td><img src="/images/vinho.png" alt="Vinho" width="150"><p>Vinho - R$ 25,00</p></td>
+                        <td><img src="/images/leite.png" alt="Leite" width="150"><p>Leite - R$ 4,80</p></td>
+                        <td><img src="/images/vodca.png" alt="Vodca" width="90"><p>Vodca - R$ 6,00</p></td>
+                    </tr>
+                </table>
             </div>
+    
+            <!-- Alimentos -->
             <div class="categoria">
                 <h3>Alimentos</h3>
-                <div class="produto">
-                    <img src="https://img.cdndsgni.com/preview/10001708.jpg" alt="Alimento 1" width="150">
-                    <p>Pão de Forma - R$ 8,00</p>
-                </div>
-                <div class="produto">
-                    <img src="data:image/jpeg;base64,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" alt="Alimento 2" width="150">
-                    <p>Biscoito - R$ 4,50</p>
-                </div>
+                <table>
+                    <tr>
+                        <td><img src="/images/pao_de_forma.png" alt="Pão de Forma" width="150"><p>Pão de Forma - R$ 8,00</p></td>
+                        <td><img src="/images/biscoito.png" alt="Biscoito" width="150"><p>Biscoito - R$ 4,50</p></td>
+                        <td><img src="/images/arroz.png" alt="Arroz" width="150"><p>Arroz - R$ 22,00</p></td>
+                        <td><img src="/images/feijao.png" alt="Feijão" width="150"><p>Feijão - R$ 8,50</p></td>
+                        <td><img src="/images/margarina.png" alt="Margarina" width="150"><p>Margarina - R$ 5,00</p></td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/queijo.png" alt="Queijo" width="150"><p>Queijo - R$ 18,00</p></td>
+                        <td><img src="/images/macarrao.png" alt="Macarrão" width="150"><p>Macarrão - R$ 3,50</p></td>
+                        <td><img src="/images/farinha_de_trigo.png" alt="Farinha de Trigo" width="150"><p>Farinha de Trigo - R$ 4,00</p></td>
+                        <td><img src="/images/manteiga.png" alt="Manteiga" width="150"><p>Manteiga - R$ 6,50</p></td>
+                        <td><img src="/images/oleo.png" alt="Óleo de Soja" width="150"><p>Óleo de Soja - R$ 5,80</p></td>
+                    </tr>
+                </table>
             </div>
+    
+            <!-- Higiene -->
             <div class="categoria">
                 <h3>Higiene</h3>
-                <div class="produto">
-                    <img src="higiene1.jpg" alt="Higiene 1" width="150">
-                    <p>Shampoo - R$ 15,00</p>
-                </div>
-                <div class="produto">
-                    <img src="higiene2.jpg" alt="Higiene 2" width="150">
-                    <p>Sabonete - R$ 3,00</p>
-                </div>
+                <table>
+                    <tr>
+                        <td><img src="/images/shampoo.png" alt="Shampoo" width="150"><p>Shampoo - R$ 15,00</p></td>
+                        <td><img src="/images/sabonete.png" alt="Sabonete" width="150"><p>Sabonete - R$ 3,00</p></td>
+                        <td><img src="/images/desodorante.png" alt="Desodorante" width="150"><p>Desodorante - R$ 10,00</p></td>
+                        <td><img src="/images/papel_hig.png" alt="Papel Higiênico" width="150"><p>Papel Higiênico - R$ 12,00</p></td>
+                        <td><img src="/images/sab_liquido.png" alt="Sabonete Líquido" width="150"><p>Sabonete Líquido - R$ 6,50</p></td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/absorvente.png" alt="Absorvente" width="150"><p>Absorvente - R$ 7,00</p></td>
+                        <td><img src="/images/escova_dente.png" alt="Escova de Dente" width="150"><p>Escova de Dente - R$ 4,00</p></td>
+                        <td><img src="/images/pasta_dente.png" alt="Creme Dental" width="150"><p>Creme Dental - R$ 3,50</p></td>
+                        <td><img src="/images/fio_dental.png" alt="Fio Dental" width="150"><p>Fio Dental - R$ 6,00</p></td>
+                        <td><img src="/images/alcool_gel.png" alt="Álcool em Gel" width="150"><p>Álcool em Gel - R$ 9,00</p></td>
+                    </tr>
+                </table>
             </div>
         </section>
+    </div>
+    
+        
 
         <section id="servicos">
             <h2>Serviços</h2>
@@ -65,34 +97,15 @@
         </section>
     </div>
 
-    <div class="container">
-        <h2>Formulário de Cadastro</h2>
-        <form id="cadastroForm">
-            <div class="input-group">
-                <label for="nome">Nome Completo:</label>
-                <input type="text" id="nome" name="nome" required>
-            </div>
-            <div class="input-group">
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="input-group">
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" required>
-            </div>
-            <div class="input-group">
-                <label for="confirmarSenha">Confirmar Senha:</label>
-                <input type="password" id="confirmarSenha" name="confirmarSenha" required>
-            </div>
-            <div id="erro" class="erro-mensagem"></div>
-            <button type="submit">Cadastrar</button>
-        </form>
-    </div>
-
-    <script src="script.js"></script>
-
     <footer>
-        <p>&copy; 2025 Minimercado IGUACUANO | <a href="#contato">Contato</a></p>
+        <p>&copy; 2025 Minimercado IGUACUANO | <a href="#">Home</a></p>
+        <section id="contato">
+            <h2>Fale Conosco</h2>
+            <p><strong>Telefone:</strong> (11) 1234-5678</p>
+            <p><strong>Email:</strong> contato@nomedasuaempresa.com.br</p>
+            <p><strong>Endereço:</strong> Rua Exemplo, 123 - Centro, São Paulo - SP</p>
+            <p><strong>Horário de atendimento:</strong> Segunda a Sexta, das 9h às 18h</p>
+        </section>
     </footer>
 </body>
 </html>
